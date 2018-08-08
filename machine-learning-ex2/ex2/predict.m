@@ -14,8 +14,11 @@ p = zeros(m, 1);
 %               your learned logistic regression parameters. 
 %               You should set p to a vector of 0's and 1's
 %
-
-
+%theta: 3x1
+%X: 100x3
+pos = find( sigmoid(X*theta) >= .5);
+## neg = find( (X*theta) < .5);
+p(pos) = 1
 
 
 
